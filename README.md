@@ -1,9 +1,15 @@
 # Django REST demo
 
 
-Python版本与依赖库：
-  * python3.x :https://www.python.org/
-  * Django1.9.7 :https://www.djangoproject.com/ (目前只在1.9.7版本下运行通过，不要使用最新Django版本)
+### Python版本与依赖库：
+
+  * python3.5+ :https://www.python.org/
+  * Django1.11.0+ :https://www.djangoproject.com/
   * Django REST framework : http://www.django-rest-framework.org/ 
 
+### 实现了接口的增删查改：
 
+  * 查询接口：GET请求 http://127.0.0.1:8000/guests/1/
+  * 添加接口：POST请求 http://127.0.0.1:8000/guests/
+  * 更新接口：PUT请求 http://127.0.0.1:8000/guests/1/
+  * 删除接口：DELETE请求 http://127.0.0.1:8000/guests/1/
