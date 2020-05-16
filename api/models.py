@@ -1,9 +1,11 @@
 from django.db import models
 
 
-# Create your models here.
-# 发布会
+
 class Event(models.Model):
+    """
+    发布会表
+    """
     name = models.CharField(max_length=100)            # 发布会标题
     limit = models.IntegerField()                      # 限制人数
     status = models.BooleanField()                     # 状态
@@ -15,9 +17,11 @@ class Event(models.Model):
         return self.name
 
 
-# 嘉宾
 class Guest(models.Model):
-    event = models.ForeignKey(Event)            # 关联发布会id
+    """
+    嘉宾表
+    """
+    event = models.ForeignKey(Event, on_delete=models.CASCADE)   # 关联发布会id
     realname = models.CharField(max_length=64)  # 姓名
     phone = models.CharField(max_length=16)     # 手机号
     email = models.EmailField()                 # 邮箱

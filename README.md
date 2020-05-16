@@ -3,8 +3,8 @@
 
 ### Python版本与依赖库：
 
-  * python3.5+ :https://www.python.org/
-  * Django1.11.0+ :https://www.djangoproject.com/
+  * python3.6+ :https://www.python.org/
+  * Django2.2.0+ :https://www.djangoproject.com/
   * Django REST framework : http://www.django-rest-framework.org/ 
 
 ### 实现了接口的增删查改：
